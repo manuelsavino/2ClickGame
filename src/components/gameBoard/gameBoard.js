@@ -11,7 +11,7 @@ const GameBoard = (props) => {
         return <img className="p-3 img-fluid  img-thumbnail" onClick={(e) => props.handleClick(e, img)} key={img} src={"./images/" + img + ".png"} alt="test"></img>
     })
     return (
-        <div className="board text-center mt-3" > {allImages}</div>
+        <div className={'board text-center mt-3 '+ props.currentClass} > {allImages}</div>
     )
 
 }

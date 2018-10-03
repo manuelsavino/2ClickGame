@@ -9,8 +9,10 @@ class App extends Component {
     super()
     this.state = {
       clicked: [],
-      high: 10,
-      current: 0
+      high: 0,
+      current: 0, 
+      message:"Click an image to start the Game",
+      currentClass: "none"
     }
     this.handleClickEvent = this.handleClickEvent.bind(this);
 
@@ -19,8 +21,8 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <Navbar high={this.state.high} current={this.state.current} />
-        <Container handleClick={this.handleClickEvent} />
+        <Navbar high={this.state.high} current={this.state.current} message={this.state.message}/>
+        <Container handleClick={this.handleClickEvent} currentClass={this.state.currentClass} />
       </div>
     );
   }
@@ -31,11 +33,19 @@ class App extends Component {
     if (current.length === 0) {
       //Image hasnt been clicked yet, add to curre
       console.log("Not clicked yet")
-      this.setState({ current: this.state.current + 1, high: (this.state.current === this.state.high ? this.state.high + 1 : this.state.high), clicked: [...this.state.clicked, data] })
+      this.setState({ 
+        current: this.state.current + 1, 
+        high: (this.state.current === this.state.high ? this.state.high + 1 : this.state.high), 
+        clicked: [...this.state.clicked, data], 
+        message: "Good Job, keep going...",
+        currentClass: (this.state.clicked.length > 0? this.state.currentClass : "None")
+      })
     }
     else {
       //Game Over
-      console.log("Clicked Already")
+      //Reset current and clicked array
+      this.setState({ current: 0, clicked: [], message: "Game Over :(", currentClass: "animated shake" }  )
+
     }
 
 

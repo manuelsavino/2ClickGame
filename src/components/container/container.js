@@ -6,7 +6,7 @@ import GameBoard from '../gameBoard/gameBoard'
 const Container = (props) => {
     return (
         <div className="container">
-            <GameBoard handleClick={props.handleClick}></GameBoard>
+            <GameBoard handleClick={props.handleClick} currentClass={props.currentClass}></GameBoard>
         </div>
 
     )
