@@ -1,4 +1,4 @@
-# CLick Game made with React
+# Click Game made with React
 
 Purpose of this game is not to click the same image twice. 
 Images clicked are store in the state of the application.
