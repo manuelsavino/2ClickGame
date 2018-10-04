@@ -9,4 +9,4 @@ Technologies Used:
 - Bootstrap 4
 - [MDB (Material Design Bootstrap)](https://mdbootstrap.com/material-design-for-bootstrap/)
 
-![alt text](https://media.giphy.com/media/ZwEe4GaVUrJ9Z5rc6O/giphy.gif)
+![alt text](https://media.giphy.com/media/ujTH4mx3ETLqFhmVhg/giphy.gif)
