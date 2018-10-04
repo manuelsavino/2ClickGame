@@ -8,6 +8,7 @@ If the same image is clicked twice, you lose the game
 
 ![React](https://i.imgur.com/DxhHO5m.png)
 ![Bootstrap](https://i.imgur.com/1pzul7E.png)
+![Animatecss](https://i.imgur.com/bX2vqAz.png)
 
 
 ### Preview
